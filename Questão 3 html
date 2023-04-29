@@ -1,0 +1,7 @@
+<template>
+    <p> Nova oportunidade <p> 
+    <p>Nome {name}  </p>
+    <p>Data de fechamento {fristname} </p>
+    <p>Fase {company} </p>
+    <p>Conta {phone} </p>
+</template>

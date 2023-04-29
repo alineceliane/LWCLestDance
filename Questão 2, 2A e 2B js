@@ -1,5 +1,5 @@
 import { LightningElement, wire } from 'lwc';
-import getOpps from '@salesforce/apex/lwcOppSOQL.getOpps';
+import getOpp from '@salesforce/apex/lwcOppSOQL.getOps';
 
 const columns = [
     { label: 'Id', fieldName: 'Id' },
@@ -12,6 +12,6 @@ export default class Bololo extends LightningElement {
     error;
     columns = columns;
 
-    @wire(getOpps)
+    @wire(getOpp)
     opps;
 }

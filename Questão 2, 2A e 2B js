@@ -1,0 +1,17 @@
+import { LightningElement, wire } from 'lwc';
+import getOpps from '@salesforce/apex/lwcOppSOQL.getOpps';
+
+const columns = [
+    { label: 'Id', fieldName: 'Id' },
+    { label: 'Nome da Oportunidade', fieldName: 'Name' },
+    { label: 'Amount', fieldName: 'Amount', type: 'currency' },
+    { label: 'Stage Name', fieldName: 'StageName'},
+    { label: 'Data de Criação', fieldName: 'CreatedDate', type: 'date' },
+];
+export default class Bololo extends LightningElement {
+    error;
+    columns = columns;
+
+    @wire(getOpps)
+    opps;
+}

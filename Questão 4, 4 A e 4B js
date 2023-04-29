@@ -47,7 +47,7 @@ export default class CreateLeadForm extends NavigationMixin(LightningElement) {
   handleMobileChange(event) {
     this.mobile = event.target.value;
   }
-  createLead() {
+  criarLead() {
     const fields = {};
     fields[NAME_FIELD.fieldApiName] = this.name;
     fields[LAST_NAME_FIELD.fieldApiName] = this.lastName;

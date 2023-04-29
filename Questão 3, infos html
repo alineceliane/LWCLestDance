@@ -1,0 +1,22 @@
+ <template>
+    <div>
+            <div>
+                 <center>
+                    <h1>
+                     Oportunidade 
+                  </h1>
+
+                </center>
+            </div>
+
+        <div>
+            <c-opp name="Aline" data="29-04-2023" fase="Closed Lost" conta="04"> </c-opp> <br>
+        </div>
+        <br>
+        <div>
+            <c-opp name="Davino" data="30-04-2023" fase="Closed Won" conta="04"> </c-opp>
+
+         </div>
+         <br>
+   </div>
+</template> 

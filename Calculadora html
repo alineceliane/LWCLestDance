@@ -1,0 +1,28 @@
+<template>
+<div class="body">
+
+    <lightning-card title="Calculadora" class="body3">
+        <div class="b2">
+
+            <input type="text" value={displayValue} readonly /><br>
+            <button class="number" onclick={handleClick} value="7">7</button>
+        <button class="number" onclick={handleClick} value="8">8</button>
+        <button class="number" onclick={handleClick} value="9">9</button><br>
+        <button class="number" onclick={handleClick} value="4">4</button>
+        <button class="number" onclick={handleClick} value="5">5</button>
+        <button class="number" onclick={handleClick} value="6">6</button><br>
+        <button class="number" onclick={handleClick} value="1">1</button>
+        <button class="number" onclick={handleClick} value="2">2</button>
+        <button class="number" onclick={handleClick} value="3">3</button><br>
+        <button class="number" onclick={handleClick} value="0">0</button>
+        <button class="operator" onclick={handleClick} value="+">+</button>
+        <button class="operator" onclick={handleClick} value="-">-</button><br>
+        <button class="operator" onclick={handleClick} value="/">/</button>
+        <button class="operator" onclick={handleClick} value="*">*</button>
+        <button class="clear" onclick={handleClear} value="clear">Clear</button>
+        <button class="equal" onclick={handleEqual} value="equal">=</button>
+    </div>
+    </lightning-card>
+</div>
+
+</template>

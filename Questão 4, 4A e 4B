@@ -1,5 +1,5 @@
 <template>
-    <lightning-card title="Criar novo Lead">
+    <lightning-card title="Novo Lead">
       <div class="slds-m-around_medium">
         <lightning-input required label="Nome" value={name} onchange={handleNameChange}></lightning-input>
         <lightning-input required label="Sobrenome" value={lastName} onchange={handleLastNameChange}></lightning-input>
@@ -10,7 +10,7 @@
         <lightning-input required label="Celular" value={mobile} onchange={handleMobileChange}></lightning-input>
       </div>
       <div class="slds-m-around_medium">
-        <lightning-button label="Criar Lead Marotamente" variant="success" onclick={createLead}></lightning-button>
+        <lightning-button label="Criar Lead" variant="success" onclick={criarLead}></lightning-button>
       </div>
     </lightning-card>
   </template>
